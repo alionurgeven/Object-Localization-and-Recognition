@@ -8,7 +8,7 @@ startIndices(imageNum) = gridId;
 
     for i = 1: width / GridSize
        for j = 1: heigth / GridSize
-           % Calculate grid's bounding box.
+           % Calculate a grid's bounding box.
            x_start = (i-1)*GridSize + 1;
            y_start = (j-1)*GridSize + 1;
            x_end = i*GridSize;
@@ -30,6 +30,5 @@ startIndices(imageNum) = gridId;
            descriptors = cat(2, descriptors, d);
        end
     end
-        
-end
 
+end
